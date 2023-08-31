@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pj3</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <h2>Danh muc san pham</h2>
+    
+    <div id="category" class="category-list"></div>
+    
+    <h2>Danh sach san pham</h2>
+    <div class="box">
+        <div id="search" class="search">
+            <input type="text" placeholder="Tim kiem...">
+            <button>Tim kiem</button>
+        </div>
+        <select id="sort" class="sort">
+            <option value=" _ ">Default</option>
+            <option value="price_asc">Gia tang dan</option>
+            <option value="price_desc">Gia giam dan</option>
+            <option value="discountPercentage_desc">% giam gia</option>
+    
+        </select>
+    </div>
+    <div id="products" class="products-list"></div>
+    <div id="pagination">
+        <span id="pagination-prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span id="pagination-digit">1</span>
+        <span id="pagination-next"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+
+
+
+    <script type="module" src="./assets/js/category.js"></script>
+    <script type="module" src="./assets/js/products.js"></script>
+</body>
+</html>
